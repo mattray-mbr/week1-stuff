@@ -1,0 +1,161 @@
+/* ADD YOUR STYLES HERE */
+
+/* general */
+a {
+	text-decoration: none;
+	color: #fff;
+}
+input {
+	border: none;
+	color: #fff;
+}
+ul {
+	padding-left: 0 ;
+}
+ol {
+	padding-left: 0 ;
+}
+/*section 6 ---------------*/
+.boxes {
+	padding: 0 40px;
+}
+.spacing{
+	margin: 0 20px;
+	vertical-align: top;
+}
+.boxitem {
+	display: inline-block;
+}
+/*section 7 ---------------*/
+.vertical {
+	padding: 100px 0;
+}
+/*section 8 ---------------*/
+.navigation li{
+	float: left;
+	display: inline-block;
+}
+/*section 9 ---------------*/
+.button {
+	background-color: #ff8080;
+	padding: 10px 50px;
+	display: inline-block;
+	border-radius: 5px
+}
+#larger {
+padding: 25px 75px;
+}
+#smaller {
+ padding: 5px 10px;
+ font-size: 12px;
+}
+/*section 10 ---------------*/
+.highlighted {
+	width: 700px;
+}
+.highlighted li:first-child {
+	border-radius: 5px 0 0 5px;
+}
+.highlighted li:last-child {
+	border-radius: 0 5px 5px 0;
+}
+.highlighted li {
+	background-color: #ff8080;
+	width: 130px;
+	float: left;
+	list-style: none;
+	text-align: center;
+	padding: 10px 0;
+	border: 2px solid #ff8080;
+}
+.highlighted li:hover {
+	background-color: #fff;
+}
+.highlighted li:hover a {
+	color: #ff8080;
+	font-size: 16px;
+	font-weight: bold;
+}
+/*section 11 ---------------*/
+.pagination {
+	list-style: none;
+}
+.pagination li{
+	float:left;
+	margin: 0 5px;
+	border-bottom: 3px solid #ff8080;
+	padding: 5px 8px;
+}
+.pagination li:first-child {
+	border-bottom: none;
+}
+.pagination li:last-child {
+	border-bottom: none;
+}
+.pagination li a {
+	color: #ff8080;
+}
+.pagination .active {
+	color: #ccc;
+	border-bottom: 4px solid #ccc;
+}
+/*section 12 ---------------*/
+.entryDate {
+	color: #ccc;
+	font-size: 12px;
+}
+.topic {
+	margin: 10px;
+}
+.person {
+	display: inline-block;
+	margin-left: 5px;
+}
+.subTopic {
+	margin-top: 10px;
+}
+.message {
+	display: inline-block;
+	vertical-align: top;
+}
+/*section 13 ---------------*/
+.tabular li {
+	display: inline-block;
+	border: 1px solid #00ace6;
+	border-bottom: none;
+	border-radius: 5px 5px 0 0;
+	margin: 0 5px;
+}
+.tabular li:first-child {
+	margin-left: 15px;
+}
+.tabs {
+	color: blue;
+	margin: 5px 10px;
+	font-weight: bold;
+	font-size: 14px;
+}
+.description {
+	border: 1px solid #00ace6;
+	padding: 10px;
+	border-radius: 5px;
+}
+#activeTab {
+	border-bottom: 1px solid #fff;
+	margin-bottom: -1px;
+}
+#activeTab div{
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
