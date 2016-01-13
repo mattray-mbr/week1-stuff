@@ -1,6 +1,7 @@
 
 body {
 	padding-top: 10px;
+	background-color: #fff3e5;
 }
 li {
 	list-style: none;
@@ -12,13 +13,24 @@ ul {
 	padding: 0;
 	margin: 0;
 }
-
+@media(max-width:960px) {
+	body {
+		padding: 10px 15px;
+	}
+}
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
  /*navbar   -----------------*/
+ .title {
+ 	font-size: 45px;
+ 	margin: 0;
+ }
 .navigation {
 	max-width: 960px;
 	width: 100%;
 	margin: 0 auto;
-
 }
 .navbar {
 	text-align: center;
@@ -29,19 +41,14 @@ ul {
 	display: flex;
 	justify-content: space-between;
 }
-/*@media(min-width:650px) {
-	.navbar-item {
-	display: block;
-	}
-}*/
-.nav-link {
-	/*padding: 8px 0;*/
+.navbar a {
 	background-color: #555;
 	font-size: 25px;
 	color: #594;
 	font-weight: bold;
+	border-radius: 5px;
 }
-.nav-link:hover {
+.navbar a:hover {
 	background-color: #594;
 	color: #000;
 }
@@ -49,29 +56,79 @@ ul {
 	padding: 5px 20px;
 	margin: 5px 0;
 }
-
+@media(max-width:650px) {
+	.navbar {
+		display:block;
+		height:auto;
+		padding: 2px 5px;
+	}
+	.navbar a {
+		display: block;
+	}
+}
 /*content ----------------*/
-.container {
+.content {
+	background-color: #fff;
 	max-width: 936px;
 	margin: 0 auto;
-	padding: 10px;
+	padding: 10px 10px 0 10px;
 	border: 2px solid #ccc;
 	border-radius: 0 0 5px 5px;
 }
+.first-letter {
+	float: left;
+	color: #594;
+	font-size: 42px;
+	line-height: 30px;
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-left: 1px;
+	font-family: Georgia;
+}
+.hero {
+	height: auto;
+}
 .hero-img {
 	width: 100%;
+	border-radius: 5px;
+}
+.gal-head {
+	font-size: 30px;
+	text-align: center;
+	font-family: Helvetica, sans-serif;
+	margin: 15px 0;
 }
 .gallery {
-	margin-top: 10px;
+	margin: 10px -10px 0 -10px;
+}
+.row {
 	display: flex;
 	justify-content: space-between;
+	margin: 10px 0;
 }
 .gal-img {
-
+	border-radius: 5px;
+	width: 200px;
+	height: 200px;
 }
-
-
-
+@media(max-width:960px) {
+	.gal-img {
+		width: 120px;
+		height: 120px;
+	}
+}
+@media(max-width: 650px) {
+	.row{
+		display: block;
+		padding: 0 10px;
+	}
+	.gal-img {
+		display: block;
+		width: 100%;
+		height: auto;
+		margin: 10px 0;
+	}
+}
 /*footer -------------*/
 .foot {
 	width: 100%;
