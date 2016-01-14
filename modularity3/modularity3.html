@@ -105,12 +105,16 @@
           <p class="instruction-text">The textbox should be fluid, i.e. stretch to fit the available space when the window changes size. <em>Hint: Look up 3-column layouts with fluid center.</em></p>
           <div class="instruction-answer">
             <!-- Edit here -->
-            <div>
-              <label>Find groups</label>
-              <div>
-                <input placeholder="Find Groups by Title or Description">
+            <div class="searchbar">
+              <div class="search-text collumn" id="middle-search">
+                <input class="search-text" placeholder=" Find Groups by Title or Description">
               </div>
-              <input type="submit">
+              <div class="collumn" id="left-search">
+                <label class="search-label">Find groups</label>
+              </div>
+              <div class="collumn" id="right-search">
+                <input class="submit" type="submit">
+              </div>
             </div>
             <!-- End editable area -->
           </div>
@@ -119,12 +123,14 @@
         <li>
           <h1 class="instruction-title">Omnibox</h1>
 
-          <p class="instruction-text">Create a textbox which can display multiple "tags" as there are entered.</p>
+          <p class="instruction-text">Create a textbox which can display multiple "tags" as they are entered.</p>
           <div class="instruction-answer">
             <!-- Edit here -->
-            <div>
-              <ul><li><a href="#">x</a>Date: Yesterday</li><li><a href="#">x</a>Label: Notes</li></ul>
-              <input type="text" placeholder="Enter more terms">
+            <div class="tag-box">
+              <ul class="tags"><li class="new-tag"><a href="#">x</a>Date: Yesterday</li><li class="new-tag" id="tagB"><a href="#">x</a>Label: Notes</li></ul>
+              <div class="tag-notes">
+                <input class="form-input add-terms" type="text" placeholder="Enter more terms">
+              </div>
             </div>
             <!-- End editable area -->
           </div>
