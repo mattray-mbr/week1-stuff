@@ -70,9 +70,9 @@ ul {
 #validation-form div:nth-child(2) {
 	margin-right: 192px;
 }
-/*.valid-input {
-	box-shadow: 2px 2px 4px #39e600;
-}*/
+.valid-input {
+	border: 2px outset #39e600;
+}
 
 /*section4 ---------------*/
 .searchbar {

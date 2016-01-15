@@ -3,112 +3,144 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Mockup Blog</title>
+	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
-		<h1 class="title">My Website</h1>
-		<nav>
-			<ul>
-				<li>HOME</li>
-				<li>ALL POSTS</li>
-				<li>ABOUT US
-					<ul class="dropdown">
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<div class="content-container">
-		<h1 class="article-title">Article Title</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, vitae. Saepe vitae ullam laboriosam magni rem voluptas culpa nemo cum? Modi ut numquam fuga vero omnis quae nam deserunt quia repellat ipsam molestias illum animi, quis exercitationem aliquid harum impedit error optio corporis id incidunt ullam. Voluptatibus incidunt voluptates saepe.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis commodi alias maiores nesciunt obcaecati earum illo ratione numquam? Maiores voluptates, odio? Necessitatibus ad voluptatum, aliquid, doloribus amet, quasi eveniet blanditiis ratione libero repellendus ex labore dignissimos ab iste reprehenderit distinctio.</p>
-		<h2 class="section-head">Section Title</h2>
-		<div class="section">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellendus asperiores, corrupti dignissimos magnam fuga eligendi, sed nemo ea animi?</p>
-			<table>
-				
-			</table>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea adipisci libero rerum porro aspernatur magnam reiciendis facilis iusto, fugit itaque!</p>
-		</div> <!-- section -->
-		<h2 class="section-head">Section Title</h2>
-		<div class="section">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat cumque numquam fugiat, alias aperiam at, odio explicabo. Velit, fugiat, beatae!</p>
-			<div class="gray">
-				<p>$('#myElement').click(finciton(){ <br>
-					console.log('Clicked!') <br>
-					});</p>
-			</div> <!-- gray -->
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut inventore earum recusandae pariatur, facere autem iusto quasi quae laasdbore dolorum!</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt labore, assumenda nisi. Distinctio explicabo odit quibusdam voluptatem officiis doloremque quam soluta placeat.</p>
-		</div> <!-- section -->
-		<h2 class="section-head">Section Title</h2>
-		<div class="section">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum necessitatibus distinctio! Maiores ut minus rerum beatae, vero voluptas, perferendis!</p>
-			<img src="" alt="">
-			<ol>
-				<li><h4 class="list-head"></h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, enim.</p>
-				</li>
-				<li><h4 class="list-head"></h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, sit.</p>
-				</li>
-				<li><h4 class="list-head"></h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, nihil!</p>
-				</li>
-			</ol>
-			<p class="section-date">Posted by Author under Web Dev on January 13, 2014.</p>
-		</div> <!-- section -->
-		
-		<h1 class="article-title">Comments</h1>
-		<div class="form">
-			<form action="">
-				<span class="form-section">USER INFO</span>
-				<input type="text">
-				<input type="text">
-				<input type="text">
-				<span class="form-section"> COMMENT</span>
-				<textarea name="" id="" cols="10" rows="10"></textarea>
-				<button class="submit"></button>
-			</form>
-		</div> <!-- form -->
-	</div> <!-- section -->
-
-	<div class="section">
-		<div class="comment">
-			<img src="" alt="">
-			<h3>User 1</h3>
-			<span class="date"></span>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, facere.</p>
-
-			<div class="comment-reply">
-				<img src="" alt="">
-				<h3>User 1</h3>
-				<span class="date"></span>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, facere.</p>
+	<div class="container">
+		<header>
+			<div class="title-top">
+				<h1 class="title">My Website</h1>
 			</div>
-			<div class="comment-reply">
-				<img src="" alt="">
-				<h3>User 1</h3>
-				<span class="date"></span>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, facere.</p>
+			<nav class="navigation">
+				<ul class="navbar">
+					<li class="navbar-item">HOME</li>
+					<li class="navbar-item" id="all-posts">ALL POSTS
+						<ul class="dropdown">
+							<li class="dropped drop-head">Recent Posts</li>
+							<li class="dropped">Another Post</li>
+							<li class="dropped">A Cool Story</li>
+							<li class="dropped">Useful Tips and Tricks</li>
+							<li class="dropped drop-head">Categories</li>
+							<li class="dropped">Web</li>
+							<li class="dropped">Dev</li>
+							<li class="dropped">CSS</li>
+						</ul>
+					</li>
+					<li class="navbar-item">ABOUT US</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="content-container">
+			<h1 class="article-title">Article Title</h1>
+			<p class="content-text">Lorem ipsum dolor sit amet, <strong>consectetur adipisicing</strong> elit. Voluptates, vitae. Saepe vitae ullam laboriosam magni rem voluptas culpa nemo cum? Modi ut <a class="mid-text" href="">numquam fuga</a> vero omnis quae nam deserunt quia repellat ipsam molestias illum animi, quis exercitationem aliquid harum impedit error optio corporis id incidunt ullam. Voluptatibus incidunt voluptates saepe.</p>
+			<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis commodi alias maiores nesciunt obcaecati earum illo ratione numquam? Maiores voluptates, odio? Necessitatibus ad voluptatum, aliquid, doloribus amet, quasi eveniet blanditiis ratione libero repellendus ex labore dignissimos ab iste reprehenderit distinctio.</p>
+			<h2 class="section-head">Section Title</h2>
+			<div class="section">
+				<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellendus asperiores, corrupti dignissimos magnam fuga eligendi, sed nemo ea animi?</p>
+				<table>
+						<tr class="top-table">
+							<td class="blog-table">What</td>
+							<td class="blog-table">Where</td>
+							<td class="blog-table">How</td>
+						</tr>
+						<tr class="blog-table">
+							<td class="blog-table">HTML</td>
+							<td class="blog-table">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsam, incidunt provident et ullam. Quasi molestiae quos nesciunt, obcaecati ex?</td>
+							<td class="blog-table"><button class="table-btn">Go!</button></td>
+						</tr>
+						<tr>
+							<td class="blog-table">CSS</td>
+							<td class="blog-table">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, cumque.</td>
+							<td class="blog-table"><button class="table-btn">Try!</button></td>
+						</tr>
+						<tr>
+							<td class="blog-table">JS</td>
+							<td class="blog-table">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, cum.</td>
+							<td class="blog-table"><button class="table-btn">View!</button></td>
+						</tr>
+				</table>
+				<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nesciunt saepe quisquam ipsa dolorem impedit recusandae dolorum, eius laborum autem voluptatem error facilis, voluptas illo consequuntur mollitia magni beatae ratione.</p>
+			</div> <!-- section -->
+			<h2 class="section-head">Section Title</h2>
+			<div class="section">
+				<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat cumque numquam fugiat, alias aperiam at, odio explicabo. Velit, fugiat, beatae!</p>
+				<div class="gray-box">
+					<p class="example-code">$('#myElement').click(finciton(){ <br>
+						console.log('Clicked!') <br>
+						});</p>
+				</div> <!-- gray -->
+				<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quae provident perspiciatis odio alias ullam magni, numquam nisi libero at, dolor eos, iure soluta corrupti placeat asperiores dolorum beatae assumenda!</p>
+				<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, omnis, inventore. Eligendi nam cum cumque iusto, obcaecati explicabo doloribus neque dolorum quasi, animi facilis veritatis natus voluptatem, dolore debitis quidem!</p>
+			</div> <!-- section -->
+			<h2 class="section-head">Section Title</h2>
+			<div class="section">
+				<p class="content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eum necessitatibus distinctio! Maiores ut minus rerum beatae, vero voluptas, perferendis!</p>
+				<img  class="section-img" src="http://placehold.it/1050x250" alt="">
+				<ol>
+					<li class="list-item"><span class="list-head">Create HTML:</span>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit delectus possimus animi, consectetur consequatur voluptatum neque eum maiores voluptas. Doloribus!
+					</li>
+					<li class="list-item"><span class="list-head">Make Pretty with CSS:</span>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consequuntur doloremque iusto distinctio quisquam eius ad voluptatem autem sunt id!
+					</li>
+					<li class="list-item"><span class="list-head">Profit:</span>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam reiciendis omnis nisi quas earum nostrum architecto excepturi doloribus pariatur, saepe!
+					</li>
+				</ol>
+				<p class="section-date">Posted by Author under Web > Dev on January 13, 2014.</p>
+			</div> <!-- section -->
+			
+			<h1 class="article-title">Comments</h1>
+			<div class="form">
+				<form action="">
+					<div class="form-head">
+						<span class="form-header">USER INFO</span>
+					</div>
+					<div class="form-section">
+						<span class="form-info">Email</span><input class="form-input" type="text">
+					</div>
+					<div class="form-section">
+						<span class="form-info">Display Name</span><input class="form-input" type="text">
+					</div>
+					<div class="form-section">
+						<span class="form-info">Website</span><input class="form-input" type="text">
+					</div>
+					<div class="form-head">
+						<span class="form-header">COMMENT</span>
+					</div>
+					<textarea class="form-comment" name="" id="" cols="10" rows="10"></textarea>
+					<button class="submit">SUBMIT</button>
+				</form>
+			</div> <!-- form -->
+		</div> <!-- section -->
+
+		<div class="section">
+			<div class="comment">
+				<img src="http://placehold.it/50x50" alt="">
+				<h3 class="comment-user">User 1 <br><span class="date">January 13, 2014</span></h3>
+				<p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum reiciendis doloremque, repellat, accusantium distinctio provident explicabo beatae adipisci harum! Voluptate!</p>
+
+				<div class="comment-reply comment">
+					<img src="http://placehold.it/50x50" alt="">
+					<h3 class="comment-user">User 1 <br><span class="date">January 13, 2014</span></h3>
+					
+					<p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quia illo, consequuntur in provident inventore ab, obcaecati maiores aut accusamus.</p>
+				</div>
+				<div class="comment-reply comment">
+					<img src="http://placehold.it/50x50" alt="">
+					<h3 class="comment-user">User 1 <br><span class="date">January 13, 2014</span></h3>
+					
+					<p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam incidunt, deleniti accusantium eius, saepe dignissimos. Inventore ad error alias sit.</p>
+				</div>
 			</div>
-		</div>
-		<div class="comment">
-			<img src="" alt="">
-			<h3>User 1</h3>
-			<span class="date"></span>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, facere.</p>
-		</div>
-	</div> <!-- section -->
+			<div class="comment comment">
+				<img src="http://placehold.it/50x50" alt="">
+				<h3 class="comment-user">User 1 <br><span class="date">January 13, 2014</span></h3>
+				<p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum adipisci explicabo laborum, eos rem est incidunt voluptatem eius magnam. Ullam!</p>
+			</div>
+		</div> <!-- section -->
+	</div>
 </body>
 </html>
 
